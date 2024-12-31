@@ -1,0 +1,48 @@
+# 信息推送hook
+Push:
+  # 1是企微、2是tg、3是bark
+  Type: 1
+  Weixin:
+    hook: #https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key={KEY}
+  Telegram:
+    token: test
+  Bark:
+    hook: test
+
+# 区块网络key
+Keys:
+  bsc_key: test
+  eth_key: test
+  sol_key: test
+
+# 聪明钱
+Wallet:
+  bsc:
+    - 0xf8de5e61322302b2c6e0a525cc842f10332811bf
+    - 0xe0885C7aA0E612b874dBAC4B693d2a41916fBC1A
+  sol:
+    - H6RErn6vTw3ZSLBN9iNpP3cAq8CETh6dy6HVkEwPonjE
+  eth:
+    - 0x187fE1a8B76c60b85c00A2819152ff00Ff642386
+    - 0x95222290DD7278Aa3Ddd389Cc1E1d165CC4BAfe5
+
+# 狗庄大户
+Whale:
+  bsc:
+    - test
+  sol:
+    - test1
+  eth:
+    - test2
+
+Exchange:
+  binance:
+    apikey: test
+    secret: test
+
+# 常规设置
+Common:
+  # 设置追踪最长时间，单位分钟，eg: 2小时=120分钟
+  interval: 300
+  # 相隔n秒轮询一次
+  duration: 5
